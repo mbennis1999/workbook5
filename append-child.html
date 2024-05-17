@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Append Child</title>
+</head>
+<body>
+  <main>
+    <div id="imagescontainer">
+    </div>
+  </main>
+  <script>
+    "use strict"
+
+
+
+    window.onload = function init() {
+      let imagescontainer = document.getElementById("imagescontainer");
+      let image = document.createElement("img");
+      image.src = "https://placehold.co/200";
+      image.alt = "placeholder image";
+      
+      imagescontainer.appendChild(image);
+    };
+  </script>
+  
+</body>
+</html>
